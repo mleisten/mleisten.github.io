@@ -32,7 +32,7 @@ a:hover {
 h1 {
     font-size: 1.5em;
     font-family:'Times New Roman', 'Times', 'Serif';
-    font-variant: "small-caps";
+    font-variant: small-caps;
 }
 p {
     font-size: 1.5em;
