@@ -8,13 +8,19 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
 }
-div.blah {
-    display: inline;
-    color: blue;
-}
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+}
+footer ul {
+    float: right;
+}
+
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
 }
 a {
     text-decoration: none;
@@ -24,8 +30,9 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family:'Times New Roman', 'Times', 'Serif';
+    font-variant: "small-caps";
 }
 p {
     font-size: 1.5em;
