@@ -10,7 +10,7 @@ nav ul, footer ul {
 }
 div.blah {
     display: inline;
-    color: #200;
+    color: blue;
 }
 nav ul li, footer ul li {
     display: inline;
