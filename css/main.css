@@ -49,7 +49,8 @@ a:hover {
 h1 {
     font-size: 2em;
     font-family: 'Times New Roman','Times','Serif';
-    font-variant: 'small-caps';
+    font-variant: small-caps;
+    text-align: center;
 }
 h2 {
     font-size: 1.75em;
