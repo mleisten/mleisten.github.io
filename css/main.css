@@ -33,19 +33,16 @@ footer ul {
   display: table;
   clear: both;
 }
-.column {
-  padding: 10px;
+.lcolumn {
+    padding: 10px;
+    float: left;
+    width: 40%;
 }
 
-.left {
-  float: left;
-  width: 40%;
-}
-
-.right {
+.rcolumn {
+    padding: 10px;
     float: right;
-  width: 60%;
-}
+    width: 60%;
 a {
     text-decoration: none;
     color: purple;
