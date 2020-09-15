@@ -34,9 +34,17 @@ footer ul {
   clear: both;
 }
 .column {
-    float: left;
+  float: left;
+  padding: 10px;
 }
 
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
 a {
     text-decoration: none;
     color: purple;
