@@ -1,7 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background-color: F5F5F5;
+    background-color: #F6F6F6;
 }
 nav ul, footer ul {
     font-family:'Times New Roman', 'Times', 'Serif';
@@ -25,7 +25,7 @@ footer ul {
 }
 a {
     text-decoration: none;
-    color: #800080;
+    color: purple;
 }
 a:hover {
     text-decoration: underline;
@@ -43,7 +43,7 @@ p {
     fot-weight: normal;
     color: black;
 }
-p b {color: #800080;
+p b {color: purple;
 }
 footer {
     border-top: 1px solid #d5d5d5;
