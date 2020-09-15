@@ -1,6 +1,7 @@
 body {
     width: 70%;
-    background-color: snow
+    background-color: snow;
+    margin: auto;
 }
 
 nav {
