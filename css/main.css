@@ -34,7 +34,7 @@ footer ul {
 
 .column {
     display: table-cell;
-    vertical-aign: 10em;
+    vertical-aign: middle;
     flex: 20%;
 }
 
