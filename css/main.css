@@ -22,10 +22,12 @@ footer ul {
 }
 
 .row {
-  display: flex;
+    display: flex;
 }
 .column {
-  flex: 50%;
+    display: table-cell;
+    vertical-aign: middle;
+    flex: 40%;
 }
 a {
     text-decoration: none;
