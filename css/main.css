@@ -34,13 +34,11 @@ footer ul {
   clear: both;
 }
 div.lcolumn {
-    padding: 10px;
     float: left;
     width: 40%;
 }
 
 div.rcolumn {
-    padding: 10px;
     float: right;
     width: 60%;
 a {
