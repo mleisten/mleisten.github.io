@@ -3,11 +3,9 @@ body {
     background-color: white;
     margin: auto;
 }
-
 nav {
     border-bottom: 1px solid purple;
 }
-
 nav ul, footer ul {
     font-family:'Times New Roman', 'Times', 'Serif';
     padding: 0px;
@@ -16,7 +14,6 @@ nav ul, footer ul {
     color: black;
     margin: 4px;
 }
-
 nav ul li, footer ul li {
     display: inline;
     margin-right: 50px;
@@ -74,7 +71,6 @@ footer {
     border-top: 2px solid purple;
     font-size: .8em;
 }
-
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
@@ -84,10 +80,10 @@ ul.posts li {
     list-style: none;
 }
 img.myface {
-       width: 70%;
+    width: 70%;
     height:auto;
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     }
