@@ -24,6 +24,8 @@ nav ul li, footer ul li {
 nav ul li a {
     font-weight: 500;
     font-size: large;
+    font-family: 'Times New Roman', 'Times', 'Serif';
+    text-decoration: none;
 }
 footer ul {
     float: right;
