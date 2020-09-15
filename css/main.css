@@ -1,17 +1,20 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background-color: red;
+}
+nav {
+    border-bottom: 2px solid purple;
 }
 nav ul, footer ul {
     font-family:'Times New Roman', 'Times', 'Serif';
     padding: 0px;
     list-style: none;
     font-weight: normal;
+    color: purple
 }
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 40px;
+    margin-right: 50px;
 }
 footer ul {
     float: right;
@@ -45,8 +48,9 @@ p {
 }
 p b {color: purple;
 }
+
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 2px solid purple;
     font-size: .8em;
 }
 
