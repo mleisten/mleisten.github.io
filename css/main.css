@@ -3,9 +3,11 @@ body {
     width: 80%;
     background-color: white smoke
 }
+
 nav {
     border-bottom: 1px solid purple;
 }
+
 nav ul, footer ul {
     font-family:'Times New Roman', 'Times', 'Serif';
     padding: 0px;
@@ -13,10 +15,12 @@ nav ul, footer ul {
     font-weight: normal;
     color: black
 }
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 50px;
 }
+
 footer ul {
     float: right;
 }
@@ -24,11 +28,13 @@ footer ul {
 .row {
     display: flex;
 }
+
 .column {
     display: table-cell;
     vertical-aign: 10em;
-    flex: 40%;
+    flex: 20%;
 }
+
 a {
     text-decoration: none;
     color: purple;
