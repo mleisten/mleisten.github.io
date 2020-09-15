@@ -4,14 +4,14 @@ body {
     background-color: white smoke
 }
 nav {
-    border-bottom: 2px solid purple;
+    border-bottom: 1px solid purple;
 }
 nav ul, footer ul {
     font-family:'Times New Roman', 'Times', 'Serif';
     padding: 0px;
     list-style: none;
     font-weight: normal;
-    color: purple
+    color: black
 }
 nav ul li, footer ul li {
     display: inline;
@@ -26,12 +26,13 @@ footer ul {
 }
 .column {
     display: table-cell;
-    vertical-aign: middle;
+    vertical-aign: 10em;
     flex: 40%;
 }
 a {
     text-decoration: none;
     color: purple;
+    font-weight: heavy;
 }
 a:hover {
     text-decoration: underline;
@@ -49,9 +50,6 @@ p {
     fot-weight: normal;
     color: black;
 }
-p b {color: purple;
-}
-
 footer {
     border-top: 2px solid purple;
     font-size: .8em;
