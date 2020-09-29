@@ -98,6 +98,16 @@ img.myface {
     margin-right: auto;
     display: block;
     }
+	// Layout
+.row {
+  display:flex;
+  .col {
+    flex:1;
+    &:last-child {
+      margin-left: 1em;
+    }
+  }
+}
 	/* Accordion styles */
 .tabs {
   border-radius: 8px;
