@@ -20,8 +20,11 @@
 body {width: 70%;
     background-color: white;
     margin: auto;}
-nav {border-bottom: 1px solid purple;
+nav {border-bottom: 1px solid darkmagenta;
 }
+ul.tight {margin-top: 4px;
+	padding-left: 52px;
+	}
 nav ul, footer ul {
     font-family:'Noto Sans';
     padding: 0px;
@@ -59,7 +62,7 @@ div.rcolumn {
 	}
 a {
     text-decoration: none;
-    color: purple;
+    color: darkmagenta;
     font-weight: heavy;
 }
 a:hover {
@@ -77,6 +80,7 @@ h2 {
     font-size: 1.75em;
     font-family:'Noto Sans';
     font-weight: 500;
+    margin-bottom: 0px;
 }
 p {
     font-size: 1em;
@@ -86,14 +90,20 @@ p {
     color: black;
 }
 footer {
-    border-top: 2px solid purple;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 2px solid darkmagenta;
     font-size: .8em;
 }
 ul {
     line-height: 1.2em;
     font-family: 'Noto Sans';
     }
-
+p.tight {
+	padding-left: 36px;
+    text-indent: -36px;
+	margin-bottom: 4px;
+    }
 img.myface {
     width: 70%;
     height:auto;
@@ -103,8 +113,32 @@ img.myface {
     margin-right: auto;
     display: block;
     }
+.collapsible {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  margin: 0px;
+  border: none;
+  text-align: left;
+  display: inline-block;
+  outline: none;
+  font-family: 'Noto Sans';
+	}
+.collapsible:after {
+	font-size: 1.2em;
+	content:' \25BC';
+    }
+.active, .collapsible:hover {
+  background-color: white;
+  color: darkmagenta;
+	}
+.content {
+  padding: 0px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+}
 </style>
-
 <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Noto+Sans:wght@200..900">
 	
