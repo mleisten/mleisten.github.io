@@ -1,211 +1,375 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv='cache-control' content='no-cache'> 
-<meta http-equiv='expires' content='0'> 
-<meta http-equiv='pragma' content='no-cache'>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178064363-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		gtag('config', 'UA-178064363-1');
-	</script>
-<!--CSS Header-->
-<style type = text/css> 
-body {width: 70%;
-    background-color: white;
-    margin: auto;}
-nav {border-bottom: 1px solid darkmagenta;
-}
-ul.tight {margin-top: 4px;
-	padding-left: 54px;
-	}
-nav ul, footer ul {
-    font-family:'Poppins';
-    padding: 0px;
-    list-style: none;
-    font-weight: normal;
-    color: black;
-    margin: 4px;
-}
-li {
-	font-family:'Poppins';
-	font-weight: normal;
-	color: black;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: clamp(15px,10%,80px);
-}
-nav ul li a {
-    font-weight: 500;
-    font-size: large;
-    font-family: 'Poppins';
-    text-decoration: none;
-}
-footer ul {
-    float: right;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-a {
-    text-decoration: none;
-    color: darkmagenta;
-    font-weight: heavy;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 2.5em;
-    font-family: 'Poppins';
-    font-variant: titling-caps;
-    text-align: center;
-    font-weight: 200;
-}
-h2 {
-    font-size: 1.75em;
-    font-family:'Poppins';
-    font-weight: 500;
-    margin-bottom: 0px;
-	text-align: center;
-}
-p {
-    font-size: 1em;
-    line-height: 1.2em;
-    font-family:'Poppins';
-    font-weight: normal;
-    color: black;
-}
-footer {
-	margin-top: 10px;
-    margin-bottom: 10px;
-    border-top: 2px solid darkmagenta;
-    font-size: .8em;
-}
-ul {
-    line-height: 1.2em;
-    font-family: 'Poppins';
-    }
-ul li {
-	padding-bottom: .2em;
-	font-family: 'Poppins';
-	}
-p.tight {
-	padding-left: 36px;
-    text-indent: -36px;
-	margin-bottom: 4px;
-    }
-img.myface {
-    width: 70%;
-    height:auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    }
-.collapsible {
-  color: black;
-  background-color: white;
-  cursor: pointer;
-  margin: 0px;
-  border: none;
-  text-align: left;
-  display: inline-block;
-  outline: none;
-  font-family: 'Poppins';
-	}
-.collapsible:after {
-	font-size: 1.2em;
-	content:' \25BC';
-    }
-.active, .collapsible:hover {
-  background-color: white;
-  color: darkmagenta;
-	}
-.content {
-  padding: 0px;
-  display: none;
-  overflow: hidden;
-  background-color: white;
-}
-@media (min-width:600px) {
-div.lcolumn {
-    float: left;
-    width: 40%;
-}	
-div.rcolumn {
-    float: right;
-    width: 60%;
-    vertical-align: center;
-	}
-	}
-@media (max-width:600px) {
-div.lcolumn {
-	width: 100%;
-	margin: auto ;
-	float: none;
-}
-div.rcolumn {
-	width: 100%;
-	margin: auto;
-	float: none;
-}
-}
-</style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Noto+Sans:wght@200..900">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Matthew Leisten</title>
+    <title>Matthew Leisten</title>
+
+    <meta
+        name="description"
+        content="Matthew Leisten is an industrial organization economist at the Federal Trade Commission."
+    >
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178064363-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-178064363-1');
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        :root {
+            --accent: #8b008b;
+            --accent-dark: #660066;
+            --text: #222;
+            --muted: #666;
+            --border: #ddd;
+            --background: #fff;
+            --max-width: 900px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0 24px;
+            background: var(--background);
+            color: var(--text);
+            font-family: "IBM Plex Sans", sans-serif;
+            font-size: 16px;
+            line-height: 1.62;
+        }
+
+        .site {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        header {
+            padding-top: 34px;
+        }
+
+        h1,
+        h2,
+        h3,
+        nav {
+            font-family: "Poppins", sans-serif;
+        }
+
+        h1 {
+            margin: 0 0 20px;
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            line-height: 1.15;
+            font-weight: 300;
+            text-align: center;
+            letter-spacing: -0.03em;
+        }
+
+        nav {
+            border-bottom: 1px solid var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: clamp(24px, 7vw, 64px);
+            margin: 0;
+            padding: 0 0 12px;
+            list-style: none;
+        }
+
+        nav a {
+            color: var(--accent);
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            color: var(--accent-dark);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        main {
+            padding: 38px 0 42px;
+        }
+
+        .intro {
+            display: grid;
+            grid-template-columns: minmax(210px, 0.8fr) minmax(0, 1.6fr);
+            gap: clamp(30px, 5vw, 58px);
+            align-items: start;
+        }
+
+        .portrait {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 3px;
+        }
+
+        .bio h2 {
+            margin: 0 0 20px;
+            font-size: clamp(1.4rem, 3vw, 1.8rem);
+            line-height: 1.35;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        p {
+            margin: 0 0 18px;
+        }
+
+        a {
+            color: var(--accent);
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--accent-dark);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .links {
+            margin: 16px 0 23px;
+            line-height: 1.9;
+        }
+
+        .links a {
+            display: inline;
+            margin-right: 8px;
+            padding: 0;
+            border: 0;
+            color: var(--accent);
+            font-family: "IBM Plex Sans", sans-serif;
+            font-size: 0.96rem;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .links a::before {
+            content: "[";
+            color: var(--text);
+            font-weight: 400;
+        }
+
+        .links a::after {
+            content: "]";
+            color: var(--text);
+            font-weight: 400;
+        }
+
+        .links a:hover,
+        .links a:focus {
+            color: var(--accent-dark);
+            background: none;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .updates {
+            margin-top: 26px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        .updates h3 {
+            margin: 0 0 6px;
+            font-size: 0.98rem;
+            font-weight: 500;
+        }
+
+        .update-list {
+            margin: 6px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .update-list li {
+            position: relative;
+            margin-bottom: 6px;
+            padding-left: 17px;
+            line-height: 1.5;
+        }
+
+        .update-list li::before {
+            content: "•";
+            position: absolute;
+            left: 2px;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .update-date {
+            color: var(--muted);
+            white-space: nowrap;
+        }
+
+        .update-date::before {
+            content: " — ";
+        }
+
+        footer {
+            padding: 20px 0 32px;
+            border-top: 1px solid var(--accent);
+            color: var(--muted);
+            font-size: 0.78rem;
+            line-height: 1.55;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 0 18px;
+            }
+
+            header {
+                padding-top: 28px;
+            }
+
+            h1 {
+                margin-bottom: 18px;
+            }
+
+            nav ul {
+                gap: 24px;
+            }
+
+            main {
+                padding: 34px 0;
+            }
+
+            .intro {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .portrait {
+                max-width: 230px;
+            }
+
+            .bio h2 {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
+
 <body>
-	<h1> Matthew Leisten 
-		</h1>
-<nav>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/Research/index">Research</a></li>
-<li><a href="/teaching/index">Teaching</a></li>
-</ul>
-</nav>
-<div class="container">
-<div class="row">
-<div class ="lcolumn">
-<img class="myface" src="MJL.jpg" alt="Matt Leisten">
+<div class="site">
+
+    <header>
+        <h1>Matthew Leisten</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Research/index">Research</a></li>
+                <li><a href="/teaching/index">Teaching</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+
+            <div>
+                <img
+                    class="portrait"
+                    src="MJL.jpg"
+                    alt="Matthew Leisten"
+                >
+            </div>
+
+            <div class="bio">
+
+                <h2>
+                    Economist<br>
+                    Federal Trade Commission
+                </h2>
+
+                <p>
+                    I am an industrial organization economist who received
+                    his Ph.D. from Northwestern University in 2020.
+                </p>
+
+                <div class="links" aria-label="Professional links">
+                    <a href="https://www.dropbox.com/scl/fi/0cubdnvqx43tynm84njgj/Leisten_CV.pdf?rlkey=09ct5ec95dtewzfl0ygw3m4vd&dl=0">
+                        CV
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Matthew-Leisten">
+                        ResearchGate
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=lBWyK18AAAAJ&hl=en&oi=ao">
+                        Google Scholar
+                    </a>
+                    <a href="https://twitter.com/LeistenEcon">
+                        Twitter
+                    </a>
+                    <a href="https://bsky.app/profile/leistenecon.bsky.social">
+                        Bluesky
+                    </a>
+                </div>
+
+                <p>
+                    When I'm not doing economics, I'm listening to music
+                    you probably don't like, watching movies you probably do,
+                    cooking something you definitely would, or driving around
+                    the country looking for the best beers, breads, and BBQ.
+                </p>
+
+                <section class="updates">
+                    <h3>Latest updates</h3>
+
+                    <ul class="update-list">
+                        <li>
+                            New draft of <strong>“Open(?) AI”</strong>
+                            <span class="update-date">May 2026</span>
+                        </li>
+
+                        <li>
+                            New draft of
+                            <strong>“Distributional Consequences of Privacy Regulation”</strong>
+                            <span class="update-date">April 2026</span>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            All views expressed on this website are my own and do not
+            represent those of the Federal Trade Commission, its Commissioners,
+            or the U.S. Government.
+        </p>
+    </footer>
+
 </div>
-<div class="rcolumn">
-<h2 margin-bottom: 1cm; text-align: center>Economist,<br>
-Federal Trade Commission</h2>
-
-<p> I am an industrial organization economist who received his Ph.D. from Northwestern University in 2020.</p>
-
-
-	<p>Here is my: </p>
-	
-	<p><a href="https://www.dropbox.com/scl/fi/0cubdnvqx43tynm84njgj/Leisten_CV.pdf?rlkey=09ct5ec95dtewzfl0ygw3m4vd&dl=0">[CV]</a> <a href="https://www.researchgate.net/profile/Matthew-Leisten">[Researchgate]</a> <a href="https://scholar.google.com/citations?user=lBWyK18AAAAJ&hl=en&oi=ao">[Google Scholar]</a> <a href="https://twitter.com/LeistenEcon">[Twitter]</a> <a href="https://bsky.app/profile/leistenecon.bsky.social">[Bluesky]</a>.</p>
-
-	<p> When I'm not doing economics, I'm listening to music you probably don't like, watching movies you probably do, cooking something you definitely would, or driving around the country looking for the best beers, breads, and BBQ. <p>
-		
-	<p> <b> Latest updates: </b> New draft of "Open(?) AI", May 2026. New draft of "Distributional Consequences of Privacy Regulation", April 2026 </p>
-
-
-</div>
-</div>				
-</div>
-	<footer>
-<ul> All views expressed on this website are my own and do not represent those of the Federal Trade Commission, its Commissioners, or the US Government. </ul>
-</footer>
 </body>
 </html>
