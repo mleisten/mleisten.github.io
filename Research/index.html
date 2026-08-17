@@ -1,343 +1,1126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv='cache-control' content='no-cache'> 
-<meta http-equiv='expires' content='0'> 
-<meta http-equiv='pragma' content='no-cache'>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178064363-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		gtag('config', 'UA-178064363-1');
-	</script>
-<!--CSS Header-->
-<style type = text/css> 
-body {width: 70%;
-    background-color: white;
-    margin: auto;}
-nav {border-bottom: 1px solid darkmagenta;
-}
-ul.tight {margin-top: 4px;
-	padding-left: 54px;
-	}
-nav ul, footer ul {
-    font-family:'Poppins';
-    padding: 0px;
-    list-style: none;
-    font-weight: normal;
-    color: black;
-    margin: 4px;
-}
-nav ul li, footer ul li {
-    display: inline;
-	margin-right: clamp(15px,10%,80px);
-	}
-nav ul li a {
-    font-weight: 500;
-    font-size: large;
-    font-family: 'Poppins';
-    text-decoration: none;
-}
-footer ul {
-    float: right;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-a {
-    text-decoration: none;
-    color: darkmagenta;
-    font-weight: heavy;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 2.5em;
-    font-family: 'Poppins';
-    font-variant: titling-caps;
-    text-align: center;
-    font-weight: 200;
-}
-h2 {
-    font-size: 1.75em;
-    font-family:'Poppins';
-    font-weight: 500;
-    margin-bottom: 0px;
-	text-align: center;
-}
-p {
-    font-size: 1em;
-    line-height: 1.2em;
-    font-family:'Poppins';
-    font-weight: normal;
-    color: black;
-}
-footer {
-	margin-top: 10px;
-    margin-bottom: 10px;
-    border-top: 2px solid darkmagenta;
-    font-size: .8em;
-}
-ul {
-    line-height: 1.2em;
-    font-family: 'Poppins';
-    }
-ul li {
-	padding-bottom: .2em;
-	font-family: 'Poppins';
-	}
-p.tight {
-	padding-left: 36px;
-    text-indent: -36px;
-	margin-bottom: 4px;
-    }
-p.tight2 {
-	padding-left: 36px;
-	text-indent: 0px;
-	margin-bottom: 4px;
-	margin-top: 6px;
-}
-img.myface {
-    width: 70%;
-    height:auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    }
-.collapsible {
-  color: black;
-  background-color: white;
-  cursor: pointer;
-  margin: 0px;
-  border: none;
-  text-align: left;
-  display: inline-block;
-  outline: none;
-  font-family: 'Poppins';
-	}
-.collapsible:after {
-	font-size: 1.2em;
-	content:' \25BC';
-    }
-.active, .collapsible:hover {
-  background-color: white;
-  color: darkmagenta;
-	}
-.content {
-  padding: 0px;
-  display: none;
-  overflow: hidden;
-  background-color: white;
-}
-@media (min-width:600px) {
-div.lcolumn {
-    float: left;
-    width: 40%;
-}	
-div.rcolumn {
-    float: right;
-    width: 60%;
-    vertical-align: center;
-	}
-	}
-@media (max-width:600px) {
-div.lcolumn {
-	width: 100%;
-	margin: auto ;
-	float: none;
-}
-div.rcolumn {
-	width: 100%;
-	margin: auto;
-	float: none;
-}
-}
-</style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Noto+Sans:wght@200..900">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Matthew Leisten</title>
+    <title>Research | Matthew Leisten</title>
+
+    <meta
+        name="description"
+        content="Research by Matthew Leisten, an industrial organization economist."
+    >
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178064363-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-178064363-1');
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        :root {
+            --accent: #8b008b;
+            --accent-dark: #660066;
+            --text: #222;
+            --muted: #666;
+            --border: #ddd;
+            --background: #fff;
+            --max-width: 900px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0 24px;
+            background: var(--background);
+            color: var(--text);
+            font-family: "IBM Plex Sans", sans-serif;
+            font-size: 16px;
+            line-height: 1.62;
+        }
+
+        .site {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        /* ---------- Header ---------- */
+
+        header {
+            padding-top: 34px;
+        }
+
+        h1,
+        h2,
+        h3,
+        nav {
+            font-family: "Poppins", sans-serif;
+        }
+
+        h1 {
+            margin: 0 0 20px;
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            line-height: 1.15;
+            font-weight: 300;
+            text-align: center;
+            letter-spacing: -0.03em;
+        }
+
+        nav {
+            border-bottom: 1px solid var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: clamp(24px, 7vw, 64px);
+            margin: 0;
+            padding: 0 0 12px;
+            list-style: none;
+        }
+
+        nav a {
+            color: var(--accent);
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            color: var(--accent-dark);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        /* ---------- Main content ---------- */
+
+        main {
+            padding: 34px 0 42px;
+        }
+
+        .research-section {
+            margin-bottom: 38px;
+        }
+
+        .research-section > h2 {
+            margin: 0 0 18px;
+            padding-bottom: 7px;
+            border-bottom: 1px solid var(--border);
+            font-size: 1.35rem;
+            line-height: 1.35;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        a {
+            color: var(--accent);
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--accent-dark);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ---------- Papers ---------- */
+
+        .paper {
+            margin: 0 0 19px;
+        }
+
+        .paper-heading {
+            position: relative;
+            margin: 0;
+            padding-left: 26px;
+            line-height: 1.55;
+        }
+
+        .paper-title {
+            font-weight: 500;
+        }
+
+        .paper-meta {
+            color: var(--text);
+        }
+
+        /* ---------- Bracket links ---------- */
+
+        .paper-links {
+            white-space: normal;
+        }
+
+        .paper-links a {
+            margin-right: 5px;
+            white-space: nowrap;
+        }
+
+        .paper-links a::before {
+            content: "[";
+            color: var(--text);
+            font-weight: 400;
+        }
+
+        .paper-links a::after {
+            content: "]";
+            color: var(--text);
+            font-weight: 400;
+        }
+
+        /* ---------- Expand/collapse arrows ---------- */
+
+        .collapsible {
+            position: absolute;
+            left: 0;
+            top: 0.05em;
+
+            width: 22px;
+            height: 26px;
+            padding: 0;
+
+            border: 0;
+            background: none;
+
+            color: var(--accent);
+            cursor: pointer;
+
+            font-family: "IBM Plex Sans", sans-serif;
+            font-size: 1.15rem;
+            line-height: 1;
+        }
+
+        .collapsible::before {
+            content: "▸";
+        }
+
+        .collapsible.active::before {
+            content: "▾";
+        }
+
+        .collapsible:hover,
+        .collapsible:focus {
+            color: var(--accent-dark);
+            outline: none;
+        }
+
+        /* ---------- Expanded summaries ---------- */
+
+        .content {
+            display: none;
+            margin: 8px 0 2px 26px;
+            padding: 0 0 0 16px;
+            border-left: 1px solid var(--border);
+        }
+
+        .content ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .content li {
+            margin-bottom: 5px;
+        }
+
+        .content li::marker {
+            color: var(--accent);
+        }
+
+        /* ---------- Footer ---------- */
+
+        footer {
+            padding: 20px 0 32px;
+            border-top: 1px solid var(--accent);
+            color: var(--muted);
+            font-size: 0.78rem;
+            line-height: 1.55;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* ---------- Mobile ---------- */
+
+        @media (max-width: 700px) {
+            body {
+                padding: 0 18px;
+            }
+
+            header {
+                padding-top: 28px;
+            }
+
+            h1 {
+                margin-bottom: 18px;
+            }
+
+            nav ul {
+                gap: 24px;
+            }
+
+            main {
+                padding: 28px 0 34px;
+            }
+
+            .research-section {
+                margin-bottom: 32px;
+            }
+
+            .research-section > h2 {
+                font-size: 1.22rem;
+            }
+
+            .paper {
+                margin-bottom: 21px;
+            }
+        }
+    </style>
 </head>
 
-
 <body>
-	<h1> Matthew Leisten 
-		</h1>
-<nav>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/Research">Research</a></li>
-<li><a href="/teaching">Teaching</a></li>
-</ul>
-</nav>
 
-<div class="container">
+<div class="site">
 
-<h2> Published and Forthcoming </h2>
+    <header>
+        <h1>Matthew Leisten</h1>
 
-<p class="tight"><button type="button" class="collapsible"></button><b> "Dynamic Regulation with Firm Linkages: Evidence from Texas"</b> with 
-<a href="https://nvreug.github.io"> Nicholas Vreugdenhil. </a> May 2025. Forthcoming at <i> Review of Economic Studies. </i>  <a href="https://www.dropbox.com/s/ceqvc55q4hxpi4b/Dynamic_Regulation_with_Firm_Linkages.pdf?dl=0">[Dropbox]</a> <a href="https://www.dropbox.com/s/zx079ztd24vo86l/linked_regulation_appendix.pdf?dl=0">[Online Appendix]</a></p>
-<div class="content">
-<ul class = "tight">
-<li> How should an environmental regulator <b>target costly inspections?</b> Examine a regulation that targets past-violator plants (escalation) and plants co-owned with past-violator plants (linking). </li>
-<li> Estimate structural model with <b>dynamic moral hazard</b> (hidden pollution actions) and <b>interdependent payoffs</b> via linked regulation. </li>
-<li> Methodological innovation: use <b>continuation value sufficiency</b> to collapse the state space</li>
-<li> Targeting historic bad actors is better than random inspections, and <b>linking is better than just targeting.</b> Massive efficiency improvements! </li>
-</ul>
-</div>
-	
-<p class="tight"><button type="button" class="collapsible"></button><b> "The equilibrium effects of environmental regulations on heterogeneous competing firms: Evidence from Chinese manufacturing" </b> with Ruizhi Pang, Xuping Zhang, and Zhongqi Deng.  Forthcoming at <i> International Journal of Industrial Organization. </i> <a href="https://www.sciencedirect.com/science/article/abs/pii/S016771872500027X"> [Published] </a> </p>
-<div class="content">
-<ul class = "tight">
-<li>Environmental regulations are often uniform, even though they apply to high-emission and low-emission competitors. This can reshape competition.</li>
-<li>Characterize theoretically how these regulations can reallocate production, change markups, and induce firm exit. Corroborate the theory empiricially using data from China.</li>
-</ul>
-</div>
-	
-<h2> Working Papers </h2>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Research">Research</a></li>
+                <li><a href="/teaching">Teaching</a></li>
+            </ul>
+        </nav>
+    </header>
 
-	<p class="tight"><button type="button" class="collapsible"></button><b> "Open(?) AI" </b> Latest available draft: May 2026. <a href="https://www.dropbox.com/scl/fi/h4lw0bwu97kasm7zm288c/_Open__Ai.pdf?rlkey=ro8t4en9zbk0tw4rqs6fm76hd&st=s1hi80nq&dl=0">[Dropbox]</a> <a href="https://www.dropbox.com/scl/fi/7kc8y6orumbhg387355ba/_Open__Ai_slides.pdf?rlkey=ytco2j03g8q7tiuy991qvdewi&st=hcufesmb&dl=0">[Slides]</a>
-<div class="content">
-<ul class = "tight">
-<li> Open AI models allow users to download the parameters and fine-tune the model for a specific purpose. When would the developer of such a ``foundation'' model prefer to do this? </li>
-<li> Embed software customization in a framework of general and niche products. Fine-tuning makes a model more niche. </li>
-<li> Examine the distortions in the direction and quantity of innovation that arise when the developer community fine-tunes vs. when a founder designs the model privately.</li>
-</ul>
-</div>
-	
-<p class="tight"><button type="button" class="collapsible"></button><b> "The Distributional Consequences of Privacy Regulation on Platforms" </b> with <a href="https://wp.bencasner.info/">Ben Casner.</a> 
-Latest available draft: April 2026 <a href="https://www.dropbox.com/scl/fi/abfo9y8x0jhyfkfxeprep/Distributional_Consequences_of_Privacy_Regulation.pdf?rlkey=y3pwse5m5sbbqk600mr64h22y&st=02uxc3lp&dl=0"> [Dropbox] </a> </p>
-<div class="content">
-<ul class = "tight">
-<li> Privacy regulation makes ad-supported platform content worse for advertisers. How does this flow through to consumers?</li>
-<li> Show conditions under which privacy regulation induces monopoly platform to shift consumers onto premium by increasing ad load and lowering prices. This is bad for the poorest consumers, who are inframarginal for the free version! </li>
-<li> Explore extensions where (1) consumers have heterogeneous value of attention to advertisers; (2) consumers have preferences for privacy; (3) the platform offers a mixed ad/paid product. </li>
-</ul>
+    <main>
+
+        <!-- ==========================================
+             PUBLISHED AND FORTHCOMING
+             ========================================== -->
+
+        <section class="research-section">
+
+            <h2>Published and Forthcoming</h2>
+
+            <div class="paper">
+
+                <p class="paper-heading">
+
+                    <button
+                        type="button"
+                        class="collapsible"
+                        aria-label="Show paper summary"
+                        aria-expanded="false">
+                    </button>
+
+                    <span class="paper-title">
+                        “Dynamic Regulation with Firm Linkages:
+                        Evidence from Texas”
+                    </span>
+
+                    <span class="paper-meta">
+                        with
+                        <a href="https://nvreug.github.io">
+                            Nicholas Vreugdenhil
+                        </a>.
+                        May 2025. Forthcoming at
+                        <i>Review of Economic Studies</i>.
+                    </span>
+
+                    <span class="paper-links">
+                        <a href="https://www.dropbox.com/s/ceqvc55q4hxpi4b/Dynamic_Regulation_with_Firm_Linkages.pdf?dl=0">
+                            Dropbox
+                        </a>
+
+                        <a href="https://www.dropbox.com/s/zx079ztd24vo86l/linked_regulation_appendix.pdf?dl=0">
+                            Online Appendix
+                        </a>
+                    </span>
+
+                </p>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            How should an environmental regulator
+                            <b>target costly inspections?</b>
+                            Examine a regulation that targets past-violator
+                            plants (escalation) and plants co-owned with
+                            past-violator plants (linking).
+                        </li>
+
+                        <li>
+                            Estimate structural model with
+                            <b>dynamic moral hazard</b>
+                            (hidden pollution actions) and
+                            <b>interdependent payoffs</b>
+                            via linked regulation.
+                        </li>
+
+                        <li>
+                            Methodological innovation: use
+                            <b>continuation value sufficiency</b>
+                            to collapse the state space.
+                        </li>
+
+                        <li>
+                            Targeting historic bad actors is better than
+                            random inspections, and
+                            <b>linking is better than just targeting.</b>
+                            Massive efficiency improvements!
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="paper">
+
+                <p class="paper-heading">
+
+                    <button
+                        type="button"
+                        class="collapsible"
+                        aria-label="Show paper summary"
+                        aria-expanded="false">
+                    </button>
+
+                    <span class="paper-title">
+                        “The Equilibrium Effects of Environmental Regulations
+                        on Heterogeneous Competing Firms: Evidence from Chinese
+                        Manufacturing”
+                    </span>
+
+                    <span class="paper-meta">
+                        with Ruizhi Pang, Xuping Zhang, and Zhongqi Deng.
+                        Forthcoming at
+                        <i>International Journal of Industrial Organization</i>.
+                    </span>
+
+                    <span class="paper-links">
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S016771872500027X">
+                            Published
+                        </a>
+                    </span>
+
+                </p>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            Environmental regulations are often uniform,
+                            even though they apply to high-emission and
+                            low-emission competitors. This can reshape
+                            competition.
+                        </li>
+
+                        <li>
+                            Characterize theoretically how these regulations
+                            can reallocate production, change markups, and
+                            induce firm exit. Corroborate the theory empirically
+                            using data from China.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             WORKING PAPERS
+             ========================================== -->
+
+        <section class="research-section">
+
+            <h2>Working Papers</h2>
+
+
+            <div class="paper">
+
+                <p class="paper-heading">
+
+                    <button
+                        type="button"
+                        class="collapsible"
+                        aria-label="Show paper summary"
+                        aria-expanded="false">
+                    </button>
+
+                    <span class="paper-title">
+                        “Open(?) AI”
+                    </span>
+
+                    <span class="paper-meta">
+                        Latest available draft: May 2026.
+                    </span>
+
+                    <span class="paper-links">
+                        <a href="https://www.dropbox.com/scl/fi/h4lw0bwu97kasm7zm288c/_Open__Ai.pdf?rlkey=ro8t4en9zbk0tw4rqs6fm76hd&st=s1hi80nq&dl=0">
+                            Dropbox
+                        </a>
+
+                        <a href="https://www.dropbox.com/scl/fi/7kc8y6orumbhg387355ba/_Open__Ai_slides.pdf?rlkey=ytco2j03g8q7tiuy991qvdewi&st=hcufesmb&dl=0">
+                            Slides
+                        </a>
+                    </span>
+
+                </p>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            Open AI models allow users to download the
+                            parameters and fine-tune the model for a specific
+                            purpose. When would the developer of such a
+                            “foundation” model prefer to do this?
+                        </li>
+
+                        <li>
+                            Embed software customization in a framework of
+                            general and niche products. Fine-tuning makes a
+                            model more niche.
+                        </li>
+
+                        <li>
+                            Examine the distortions in the direction and
+                            quantity of innovation that arise when the developer
+                            community fine-tunes vs. when a founder designs the
+                            model privately.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="paper">
+
+                <p class="paper-heading">
+
+                    <button
+                        type="button"
+                        class="collapsible"
+                        aria-label="Show paper summary"
+                        aria-expanded="false">
+                    </button>
+
+                    <span class="paper-title">
+                        “The Distributional Consequences of Privacy Regulation
+                        on Platforms”
+                    </span>
+
+                    <span class="paper-meta">
+                        with
+                        <a href="https://wp.bencasner.info/">Ben Casner</a>.
+                        Latest available draft: April 2026.
+                    </span>
+
+                    <span class="paper-links">
+                        <a href="https://www.dropbox.com/scl/fi/abfo9y8x0jhyfkfxeprep/Distributional_Consequences_of_Privacy_Regulation.pdf?rlkey=y3pwse5m5sbbqk600mr64h22y&st=02uxc3lp&dl=0">
+                            Dropbox
+                        </a>
+                    </span>
+
+                </p>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            Privacy regulation makes ad-supported platform
+                            content worse for advertisers. How does this flow
+                            through to consumers?
+                        </li>
+
+                        <li>
+                            Show conditions under which privacy regulation
+                            induces monopoly platform to shift consumers onto
+                            premium by increasing ad load and lowering prices.
+                            This is bad for the poorest consumers, who are
+                            inframarginal for the free version!
+                        </li>
+
+                        <li>
+                            Explore extensions where (1) consumers have
+                            heterogeneous value of attention to advertisers;
+                            (2) consumers have preferences for privacy;
+                            (3) the platform offers a mixed ad/paid product.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="paper">
+
+                <p class="paper-heading">
+
+                    <button
+                        type="button"
+                        class="collapsible"
+                        aria-label="Show paper summary"
+                        aria-expanded="false">
+                    </button>
+
+                    <span class="paper-title">
+                        “Economic Inequality and Market Power”
+                    </span>
+
+                    <span class="paper-meta">
+                        Latest available draft: November 2024.
+                    </span>
+
+                    <span class="paper-links">
+                        <a href="https://www.dropbox.com/scl/fi/6128lfdirgpgigvslidd8/Inequality.pdf?rlkey=35x2tl00ofznjrbsgoy3q6r43&dl=0">
+                            Dropbox
+                        </a>
+
+                        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4634316">
+                            SSRN
+                        </a>
+
+                        <a href="https://www.dropbox.com/scl/fi/ru9tcif9r4k814yushg9i/Inequality_Slides.pdf?rlkey=9u9myjhew0bty0kt0vfkylo07&dl=0">
+                            Slides
+                        </a>
+                    </span>
+
+                </p>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            Microfound the idea that poor consumers are price
+                            sensitive because dollars mean more. Nest this in a
+                            standard partial equilibrium IO framework that
+                            includes mixed logit.
+                        </li>
+
+                        <li>
+                            Now, there is <b>causal</b> mapping from wealth to
+                            demand via price sensitivity, and possibly
+                            <b>correlated</b> wealth and tastes.
+                        </li>
+
+                        <li>
+                            Develop a set of <b>axioms</b> that are equivalent
+                            to an <b>inequality-adjusted consumer surplus</b>
+                            that is <b>utilitarian</b> in nature. In other
+                            words: marginal social welfare weights are the
+                            price coefficients.
+                        </li>
+
+                        <li>
+                            Second: develop sufficient conditions for increases
+                            in inequality to increase markups. In future:
+                            empirical exercise.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="paper">
+
+                <p class="paper-heading">
+
+                    <button
+                        type="button"
+                        class="collapsible"
+                        aria-label="Show paper summary"
+                        aria-expanded="false">
+                    </button>
+
+                    <span class="paper-title">
+                        “Algorithmic Competition, with Humans”
+                    </span>
+
+                    <span class="paper-meta">
+                        Revise and resubmit at
+                        <i>Management Science</i>.
+                        Latest available draft: October 2024.
+                    </span>
+
+                    <span class="paper-links">
+                        <a href="https://www.dropbox.com/s/pk83ocy9in8is8c/Algorithmic_Competition__with_Humans.pdf?dl=0">
+                            Dropbox
+                        </a>
+
+                        <a href="https://www.dropbox.com/s/twvlavff6otg3g9/AlgoComp_Slides.pdf?dl=0">
+                            Old Slides
+                        </a>
+                    </span>
+
+                </p>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            Pricing algorithms = delegation of pricing to
+                            automatic rules. This implies <b>commitment</b>
+                            and can soften competition.
+                        </li>
+
+                        <li>
+                            If managers can <b>override</b> algorithms,
+                            commitment is eroded. I show firms can generally
+                            design <b>override-proof pricing algorithms</b>
+                            that raise prices.
+                        </li>
+
+                        <li>
+                            The form these algorithms take depends on primitives
+                            (e.g., demand) and equilibrium selection rules, but
+                            they usually entail <b>collusion by algorithm</b>
+                            or <b>one-sided override</b> Stackelberg-type
+                            pricing.
+                        </li>
+
+                        <li>
+                            Extensions to positive override costs, dynamic
+                            pricing, and demand or marginal cost uncertainty.
+                            Uncertainty can break algorithms and cause
+                            <b>Bertrand reversion</b> if override is costless.
+                        </li>
+
+                        <li>
+                            Overall, <b>commitment and prediction are
+                            substitutes</b>: an algorithm featuring one or the
+                            other is enough to sustain supracompetitive prices.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="paper">
+
+                <p class="paper-heading">
+
+                    <button
+                        type="button"
+                        class="collapsible"
+                        aria-label="Show paper summary"
+                        aria-expanded="false">
+                    </button>
+
+                    <span class="paper-title">
+                        “Informational Differences Among Rival Firms:
+                        Measurement and Evidence from Hotels”
+                    </span>
+
+                    <span class="paper-meta">
+                        Submitted. Latest available draft: June 2022.
+                    </span>
+
+                    <span class="paper-links">
+                        <a href="https://www.dropbox.com/s/e2zzypyes3d8og2/Leisten_JMP.pdf?dl=0">
+                            Dropbox
+                        </a>
+
+                        <a href="https://www.dropbox.com/s/alqv2py4mrecm1y/ML_JMP_Talk.pdf?dl=0">
+                            Old Slides
+                        </a>
+
+                        <a href="https://www.dropbox.com/s/gbzjh6g2j48ey21/Leisten_information_online_appendix.pdf?dl=0">
+                            Online Appendix
+                        </a>
+                    </span>
+
+                </p>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            Why are some firms better at
+                            <b>predicting demand</b> than others when setting
+                            prices?
+                        </li>
+
+                        <li>
+                            New methodology leveraging
+                            <b>common-knowledge demand shifts</b> to identify
+                            information structure and mapping from information
+                            to prices (price policy functions).
+                        </li>
+
+                        <li>
+                            Apply the method to hotel industry. Turns out,
+                            <b>hotels vary widely in demand prediction
+                            abilities.</b> This matters for productivity, and
+                            it doesn't tend to advantage big chains with big
+                            data capabilities.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="paper">
+
+                <p class="paper-heading">
+
+                    <button
+                        type="button"
+                        class="collapsible"
+                        aria-label="Show paper summary"
+                        aria-expanded="false">
+                    </button>
+
+                    <span class="paper-title">
+                        “Volatility, Uncertainty, and Hotel Capacity”
+                    </span>
+
+                    <span class="paper-meta">
+                        Latest available draft: June 2020.
+                    </span>
+
+                    <span class="paper-links">
+                        <a href="https://www.dropbox.com/s/3rzopktnt40p6lo/Volatility__Uncertainty__and_Hotel_Capacity.pdf?dl=0">
+                            Dropbox
+                        </a>
+
+                        <a href="https://www.dropbox.com/s/3nnf8x6dgfx2z01/Volatility_and_Capacity_Slides.pdf?dl=0">
+                            Slides
+                        </a>
+                    </span>
+
+                </p>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            Distinguish between demand volatility (fixed
+                            capacity, adjustable prices) and uncertainty
+                            (fixed capacity, nonresponsive prices) and the
+                            differential effects on the incentives to build
+                            more capacity.
+                        </li>
+
+                        <li>
+                            Theory gives two countervailing effects:
+                            <b>insurance</b> effect means uncertainty makes you
+                            build more to avoid stockouts, while
+                            <b>productivity</b> effect means uncertainty makes
+                            capacity less valuable and makes you build less.
+                        </li>
+
+                        <li>
+                            The insurance effect dominates if and only if
+                            capacity is costly to build.
+                        </li>
+
+                        <li>
+                            Test the theory using data from the hotel industry.
+                            Here, capacity is cheap, so the
+                            <b>productivity effect dominates</b>. More uncertain
+                            markets build less.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             IN PROGRESS
+             ========================================== -->
+
+        <section class="research-section">
+
+            <h2>In Progress</h2>
+
+
+            <div class="paper">
+
+                <p class="paper-heading">
+
+                    <button
+                        type="button"
+                        class="collapsible"
+                        aria-label="Show paper summary"
+                        aria-expanded="false">
+                    </button>
+
+                    <span class="paper-title">
+                        “Building an Algorithmic Cartel”
+                    </span>
+
+                    <span class="paper-meta">
+                        Early stage.
+                    </span>
+
+                </p>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            Third-party pricing algorithms have been accused
+                            of facilitating collusion. How might this unfold
+                            over time as penetration grows?
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="paper">
+
+                <p class="paper-heading">
+
+                    <button
+                        type="button"
+                        class="collapsible"
+                        aria-label="Show paper summary"
+                        aria-expanded="false">
+                    </button>
+
+                    <span class="paper-title">
+                        “Slop”
+                    </span>
+
+                    <span class="paper-meta">
+                        Early stage.
+                    </span>
+
+                </p>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            What is AI slop, economically, and how is it
+                            different from low-quality products? How can we
+                            distinguish between the two? What are the welfare
+                            implications?
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="paper">
+
+                <p class="paper-heading">
+
+                    <button
+                        type="button"
+                        class="collapsible"
+                        aria-label="Show paper summary"
+                        aria-expanded="false">
+                    </button>
+
+                    <span class="paper-title">
+                        “Inequality, Market Power, and the Pain of Supply
+                        Shocks: Evidence from the Egg Crisis”
+                    </span>
+
+                    <span class="paper-meta">
+                        Working. Email me if you're interested!
+                    </span>
+
+                </p>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            The 2022 Bird Flu Pandemic dramatically impacted
+                            egg supply. What role did inequality between poor
+                            and wealthy consumers play in amplifying these
+                            effects?
+                        </li>
+
+                        <li>
+                            Build on my previous work and a novel dataset to
+                            (1) separately estimate the joint distribution of
+                            wealth and tastes and the causal effect of wealth
+                            on egg demand; (2) quantify the economic incidence
+                            of the pandemic on rich vs. poor consumers and
+                            adjust estimates of harm accordingly; (3) examine
+                            the role inequality played in pass-through.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <div class="paper">
+
+                <p class="paper-heading">
+
+                    <button
+                        type="button"
+                        class="collapsible"
+                        aria-label="Show paper summary"
+                        aria-expanded="false">
+                    </button>
+
+                    <span class="paper-title">
+                        “Automatic Price Cuts”
+                    </span>
+
+                    <span class="paper-meta">
+                        Early stage.
+                    </span>
+
+                </p>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            Gasoline pricing has a peculiar pattern: prices
+                            decline by uniform amounts in regular intervals
+                            before jumping irregularly.
+                        </li>
+
+                        <li>
+                            Develop a theory where firms prefer to set automatic
+                            price cuts punctuated by managerial override to
+                            explain these patterns.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             RESTING PAPERS
+             ========================================== -->
+
+        <section class="research-section">
+
+            <h2>Resting Papers</h2>
+
+            <div class="paper">
+
+                <p class="paper-heading">
+
+                    <button
+                        type="button"
+                        class="collapsible"
+                        aria-label="Show paper summary"
+                        aria-expanded="false">
+                    </button>
+
+                    <span class="paper-title">
+                        “Informational Complementarities and IT Arms Races”
+                    </span>
+
+                    <span class="paper-meta">
+                        Draft available upon request.
+                    </span>
+
+                </p>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            Examine firms' information-gathering in equilibrium.
+                            Theory suggests that if one firm gets better at
+                            predicting demand its rivals may try to do the same.
+                        </li>
+
+                        <li>
+                            In the hotel industry, equilibrium effects account
+                            for over half the variation in demand prediction
+                            quality across hotels.
+                        </li>
+
+                        <li>
+                            This suggests that if one or two large hotel chains
+                            achieve an improvement in demand forecasting
+                            ability, they may incite an IT arms race where
+                            everyone scrambles to improve as well.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            All views expressed on this website are my own and do not
+            represent those of the Federal Trade Commission, its Commissioners,
+            or the U.S. Government.
+        </p>
+    </footer>
+
 </div>
 
-	
-<p class="tight"><button type="button" class="collapsible"></button><b> "Economic Inequality and Market Power"</b> Latest available draft: November 2024. <a href="https://www.dropbox.com/scl/fi/6128lfdirgpgigvslidd8/Inequality.pdf?rlkey=35x2tl00ofznjrbsgoy3q6r43&dl=0">[Dropbox]</a> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4634316">[SSRN]</a> <a href="https://www.dropbox.com/scl/fi/ru9tcif9r4k814yushg9i/Inequality_Slides.pdf?rlkey=9u9myjhew0bty0kt0vfkylo07&dl=0">[Slides]</a>
-</p>
-<div class="content">
-<ul class="tight">
-<li>  Microfound the idea that poor consumers are price sensitive because dollars mean more. Nest this in a standard partial equilibrium IO framework that includes mixed logit.  </li>
-<li>  Now, there is <b>causal</b> mapping from wealth to demand via price sensitivity, and possibly <b>correlated</b> wealth and tastes. </li>
-<li>  Develop a set of <b>axioms</b> that are equivalent to an <b>inequality-adjusted consumer surplus</b> that is <b>utilitarian</b> in nature. In other words: marginal social welfare weights are the price coefficients. </li>
-<li>  Second: develop sufficient conditions for increases in inequality to increase markups. In future: empricial exercise. </li>
-</ul> 
-</div>	
-	
-<p class="tight"><button type="button" class="collapsible"></button><b> "Algorithmic Competition, with Humans"</b> Revise and resubmit at <i> Management Science.</i>  Latest available draft: October 2024. 
-<a href = "https://www.dropbox.com/s/pk83ocy9in8is8c/Algorithmic_Competition__with_Humans.pdf?dl=0">[Dropbox]</a> <a href = "https://www.dropbox.com/s/twvlavff6otg3g9/AlgoComp_Slides.pdf?dl=0">[Old Slides]</a></p>
-<div class="content">
-<ul class = "tight">
-<li> Pricing algorithms = delegation of pricing to automatic rules. This implies <b>commitment</b> and can soften competition. </li>
-<li> If managers can <b>override</b> algorithms, commitment is eroded. I show firms can generally design <b>override-proof pricing algorithms</b> that raise prices. </li>
-<li> The form these algorithms take depends on primitives (e.g., demand) and equilibrium selection rules, but they usually entail <b>collusion by algorithm</b> or <b>one-sided override</b> Stackelberg-type pricing. </li>
-<li> Extensions to positive override costs, dynamic pricing, and demand or marginal cost uncertainty. Uncertainty can break algorithms and cause <b>Bertrand reversion</b> if override is costless. </li>
-<li> Overall, <b>commitment and prediction are substitutes</b>: an algorithm featuring one or the other is enough to sustain supracompetitive prices. </li>
-</ul>
-</div>
-	
-<p class="tight"> <button type="button" class="collapsible"></button> <b>"Informational Differences Among Rival Firms: Measurement and Evidence from Hotels" </b> Submitted. Latest available draft: June 2022.
-<a href = "https://www.dropbox.com/s/e2zzypyes3d8og2/Leisten_JMP.pdf?dl=0">[Dropbox]</a> <a href="https://www.dropbox.com/s/alqv2py4mrecm1y/ML_JMP_Talk.pdf?dl=0">[Old Slides]</a> <a href="https://www.dropbox.com/s/gbzjh6g2j48ey21/Leisten_information_online_appendix.pdf?dl=0">[Online Appendix]</a> </p>
-<div class="content">
-<ul class="tight">
-<li>Why are some firms better at <b>predicting demand</b> than others when setting prices?</li>
-<li>New methodology leveraging <b>common-knowledge demand shifts.</b> to identify information structure and mapping from information to prices (price policy functions).</li>
-<li>Apply the method to hotel industry. Turns out, <b>hotels vary widely in demand prediction abilities.</b> This matters for productivity, and it doesn't tend to advantage big chains with big data capabilities.</li>
-</ul>
-</div>
 
-<p class="tight" > <button type="button" class="collapsible"></button> <b> "Volatility, Uncertainty, and Hotel Capacity" </b> Latest available draft: June 2020.
-<a href = "https://www.dropbox.com/s/3rzopktnt40p6lo/Volatility__Uncertainty__and_Hotel_Capacity.pdf?dl=0">
-[Dropbox]</a> <a href = "https://www.dropbox.com/s/3nnf8x6dgfx2z01/Volatility_and_Capacity_Slides.pdf?dl=0">[Slides]</a> </p>
-<div class="content">
-<ul class="tight">
-<li> Distinguish between demand volatility (fixed capacity, adjustable prices) and uncertainty (fixed capacity, nonresponsive prices) and the differential effects on the incentives to build more capacity.</li>
-<li> Theory gives two countervailing effects: <b>insurance</b> effect means uncertainty makes you build more to avoid stockouts, while <b>productivity</b> effect means uncertainty makes capacity less valuable and makes you build less. </li>
-<li> The insurance effect dominates if and only if capacity is costly to build. </li>
-<li> Test the theory using data from the hotel industry. Here, capacity is cheap, so the <b>productivity effect dominates</b>. More uncertain markets build less. </li>
-</ul>
-</div>
-
-<h2> In Progress </h2>
-
-<p class="tight"><button type="button" class="collapsible"></button><b> "Building an Algorithmic Cartel" </b> Early stage. </p>
-<div class="content">
-<ul class = "tight">
-<li>Third-party pricing algorithms have been accused of facilitating collusion. How might this unfold over time as penetration grows?</li>
-</ul>
-</div>
-
-<p class="tight"><button type="button" class="collapsible"></button><b> "Slop" </b> Early stage. </p>
-<div class="content">
-<ul class = "tight">
-<li>What is AI slop, economically, and how is it different from low-quality products? How can we distinguish between the two? What are the welfare implications? </li>
-</ul>
-</div>
-	
-<p class="tight"><button type="button" class="collapsible"></button><b> "Inequality, Market Power, and the Pain of Supply Shocks: Evidence from the Egg Crisis" </b> Working. Email me if you're interested! </p>
-<div class="content">
-<ul class = "tight">
-<li> The 2022 Bird Flu Pandemic dramatically impacted egg supply. What role did inequality between poor amd wealthy consumers play in amplifying these effects?</li>
-	<li>Build on my previous work and a novel dataset to (1) separately estimate the joint distribution of wealth and tastes and the causal effect of wealth on egg demand; (2) quantify the economic incidence of the pandemic on rich vs. poor consumers and adjust estimates of harm accordingly; (3) examine the role inequality played in pass-through.</li>
-</ul>
-</div>
-
-<p class="tight"><button type="button" class="collapsible"></button><b> "Automatic Price Cuts" </b> Early stage </p>
-<div class="content">
-<ul class = "tight">
-<li>Gasoline pricing has a peculiar pattern: prices decline by uniform amounts in regular intervals before jumping irregularly.</li>
-<li>Develop a theory where firms prefer to set automatic price cuts punctuated by managerial override to explain these patterns.</li></ul>
-</div>
-
-<h2> Resting Papers </h2>
-	
-<p class="tight"><button type="button" class="collapsible"></button><b> "Informational Complementarities and IT Arms Races" </b> Draft available upon request.</p>
-<div class="content">
-<ul class = "tight">
-<li> Examine firms' information-gathering in equlibrium. Theory suggests that if one firm gets better at predicting demand its rivals may try to do the same. </li>
-<li> In the hotel industry, equilibrium effects account for over half the variation in demand prediction quality across hotels. </li>
-<li> This suggests that if one or two large hotel chains achieve an improvement in demand forecasting ability, they may incite an IT arms race where everyone scrambles to improve as well.</li>
-</ul>
-</div>
-
-	
-</div>
-</body>
-	
-<footer>
-<ul> All views expressed on this website are my own and do not represent those of the Federal Trade Commission, its Commissioners, or the US Government. </ul>
-</footer>
-	
+<!-- Expand/collapse paper summaries -->
 <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+    const collapsibles = document.querySelectorAll(".collapsible");
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.parentElement.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+    collapsibles.forEach((button) => {
+
+        button.addEventListener("click", () => {
+
+            const paper = button.closest(".paper");
+            const content = paper.querySelector(".content");
+            const isOpen = content.style.display === "block";
+
+            content.style.display = isOpen ? "none" : "block";
+
+            button.classList.toggle("active", !isOpen);
+
+            button.setAttribute(
+                "aria-expanded",
+                String(!isOpen)
+            );
+
+            button.setAttribute(
+                "aria-label",
+                isOpen
+                    ? "Show paper summary"
+                    : "Hide paper summary"
+            );
+
+        });
+
+    });
 </script>
-</html>
+
+</body>
+	</html>
